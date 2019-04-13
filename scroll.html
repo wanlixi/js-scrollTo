@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: none;
+        outline: none;
+        user-select: none;;
+    }
+    p, h1 { margin: 0; }
+    p { 
+        margin-bottom: 5px;
+        text-indent: 26px;
+        letter-spacing: .1em;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    .no-indent {
+        text-indent: 0;
+    }
+    .nav {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+    }
+    .nav-item {
+        position: relative;
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+        font-size: 13px;
+        background: #fff;
+    }
+    .nav-item.under-line:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 6px;
+        width: 18px;
+        height: 3px;
+        background: #FC3C3C;
+        border-radius: 1.5px;
+        transform: translate3d( -50%, 0, 0);
+    }
+    .text {
+        height: 100%;
+        line-height: 45px;
+        color: #999999;
+    }
+    .content-wrapper {
+        margin: 0 0 60px;
+    }
+    .content {
+        padding-top: 57px;
+        margin: 0 auto;
+        width: 89.8667%;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #999999;
+        line-height: 22px;
+    }
+    .title {
+        margin: 15px 0 8px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #333333;
+        line-height: 14px;
+    }
+    th {
+        text-align: left;
+        color: #656565;
+        border:solid #b8b8b8; 
+        border-width:0px 1px 1px 0px;
+        background: #eaeaea;
+    }
+    td{
+        vertical-align: top;
+        border:solid #b8b8b8; 
+        border-width:0px 1px 1px 0px;
+        border-spacing: 0;
+    }
+    table{
+        width: 100%;
+        border:solid #b8b8b8; 
+        border-width:1px 0px 0px 1px;
+        border-spacing: 0;
+        color: #888888;
+    }
+    .join-us-table {
+        margin-bottom: 22px;
+    }
+    .benefits-table {
+        margin-bottom: 10px;
+    }
+    .benefits-table td {
+        width: 15.356%
+    }
+    .benefits-table tr:nth-child(1) {
+        width: 38.5756%;
+        color: #656565;
+    }
+    .sub-header {
+        color: #656565;
+        font-weight: 600;
+    }
+    .col1 {
+        width: 18.4158%;
+    }
+    .col2 {
+        width: 29.7029%;
+    }
+    .col3 {
+        width: 51.4851%;
+    }
+</style>
+<body >
+    <div class="nav">
+        <button class="nav-item under-line" id="nav1">1111</button>
+        <button class="nav-item" id="nav2">2222</button>
+        <button class="nav-item" id="nav3">3333</button>
+        <button class="nav-item" id="nav4">4444</button>
+    </div>
+    <div class="content-wrapper">
+        <!-- 入会须知 -->
+        <div class="content" id="notice">
+            <p> 若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            <p>
+                若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废
+            </p>
+    
+            <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            
+            <p>
+                若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废
+                若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废<br>
+                1、若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废<br>
+                2、若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废<br>
+                3、若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废<br>
+                4、若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废会员承担任何义务。<br>
+                5、若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废<br>
+            </p>
+        </div>
+    
+        <!-- 加入及升级 -->
+        <div class="content" id="joinUs">
+            <h1 class="title">加入方式</h1>
+            <table cellpadding="0" class="join-us-table">
+                <tr>
+                    <th class="col1">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</th>
+                    <th class="col2">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</th>
+                    <th class="col3">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</th>
+                </tr>
+                <!-- 购买或注册 -->
+                <tr>
+                    <td rowspan="3" class="col1">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col2"> 若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col3">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                </tr>
+                <tr>
+                    <td class="col2">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col3">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                </tr>
+                <tr>
+                    <td class="col2">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col3">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                </tr>
+                <!-- 升级 -->
+                <tr>
+                    <td rowspan="3" class="col1">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col2">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col3">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                </tr>
+                <tr>
+                    <td class="col2">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col3">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                </tr>
+                <tr>
+                    <td class="col2">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col3">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                </tr>
+                <!-- 保级 -->
+                <tr>
+                    <td class="col1">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col2">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td class="col3">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                </tr>
+            </table>
+    
+            <h1 class="title">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</h1>
+                <p> 若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>    
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>        
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p> 
+    
+            <h1 class="title">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</h1>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+        </div>
+    
+        <!-- 若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废 -->
+        <div class="content" id="memberBenefits">
+            <h1 class="title">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</h1>
+            <table class="benefits-table">
+                <tr>
+                    <th></th>
+                    <th>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</th>
+                    <th>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</th>
+                    <th>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</th>
+                    <th>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</th>
+                </tr>
+                <tr>
+                    <td class="sub-header">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td>95</td>
+                    <td>92</td>
+                    <td>88</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td class="sub-header">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td>12点</td>
+                    <td>13点</td>
+                    <td>14点</td>
+                    <td>15点</td>
+                </tr>
+                <tr>
+                    <td class="sub-header">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td class="sub-header">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td>1</td>
+                    <td>1.5</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="sub-header">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td></td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td class="sub-header">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                </tr>
+            </table>
+            <p class="no-indent">注：</p>
+            <p class="no-indent">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废-若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+            <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+        </div>
+    
+        <!-- 积分规则 -->
+        <div class="content" id="rules">
+            <h1 class="title">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</h1>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+
+            <h1 class="title">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</h1>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+
+            <h1 class="title">若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</h1>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+                <p>若用户未主动操作积分兑换，将被视为放弃该权利，积分逾期自动作废</p>
+        </div>
+    </div>
+    
+</body>
+</body>
+<script>
+    window.onload = function () {
+
+      // 删除未选中nav的active类
+      let navItems = document.getElementsByClassName('nav-item');
+      let contents = document.getElementsByClassName('content');
+      let curr = 0;
+      for(let i = 0; i < navItems.length; i++) {
+          let current = navItems[i];
+          current.onclick = function() {
+            curr = i
+            scrollToPosition()
+          }
+      }
+
+      let contentWrapper = document.getElementsByClassName('content-wrapper');
+      let criticalX = 60, criticalY = 30, sx, sy, ex, ey;
+      contentWrapper[0].ontouchstart = function (e) {
+        e = e || window.event
+        sx = e.touches[0].clientX
+        sy = e.touches[0].clientY
+      }
+
+      contentWrapper[0].ontouchmove = function (e) {
+        e = e || window.event
+        ex = e.touches[0].clientX
+        ey = e.touches[0].clientY
+      }
+
+      contentWrapper[0].ontouchend = function (e) {
+        let dx = sx - ex;
+        let dy = sy - ey;
+        let cirticalValue = Math.abs(dy) < criticalY && Math.abs(dx) > criticalX;
+        if (cirticalValue) {
+          curr = dx > 0 ? (++curr > 3 ? 0 : curr) : (--curr < 0 ? 3 : curr)
+          scrollToPosition()
+        }
+      }
+
+      /* 向某位置滚动
+      * duration：话费多久默认是 800ms，滚动执行完
+      * rate: 频率
+      */
+      function scrollToPosition(opt) {
+        duration = opt && opt.duration || 800
+        rate = opt && opt.rate || 16.7
+        let offsetTop = contents[curr].offsetTop, timer = null;
+        let scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        let distance = offsetTop - scrollTop
+        let speed = Math.abs(distance) / (duration / rate) 
+
+        // 选中下标
+        for(let j = 0; j < navItems.length; j++) {
+          navItems[j].classList.remove("under-line");
+        }
+        navItems[curr].classList.add("under-line");
+
+        if (distance > 0) {
+          timer = setInterval(function () {
+            scrollTop += speed;
+            executeScroll(scrollTop)
+            scrollTop >= offsetTop && clearInterval(timer)
+          }, rate);
+        } else {
+          timer = setInterval(function () {
+            scrollTop -= speed;
+            executeScroll(scrollTop)
+            scrollTop <= offsetTop && clearInterval(timer)
+          }, rate);
+        }
+
+        function executeScroll(v) {
+          document.body.scrollTop = v
+          document.documentElement.scrollTop = v
+        }
+      }
+    }
+</script>
+</html>
